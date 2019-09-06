@@ -1,8 +1,5 @@
 import { Age } from "./../src/galaculator.js"
-
-
 describe('Age', function(){
-
 
   it('should test whether the age on Mercury is .24 earth years', function(){
     let testAgeObj = new Age(12, 33);
