@@ -6,25 +6,25 @@ export class Age {
 
   getJup(){
     const jup = 11.86;
-    let jupAge = this.earAge * jup;
+    let jupAge = Math.floor(this.earAge * jup);
     return jupAge;
   }
 
   getMer(){
     const mer = .24;
-    let merAge = this.earAge * mer;
+    let merAge = Math.floor(this.earAge * mer);
     return merAge;
   }
 
   getVen(){
     const ven = .62;
-    let venAge = this.earAge * ven;
+    let venAge = Math.floor(this.earAge * ven);
     return venAge;
   }
 
   getMar(){
     const mar = 1.88;
-    let marAge = this.earAge * mar;
+    let marAge = Math.floor(this.earAge * mar);
     return marAge;
   }
 
@@ -32,11 +32,11 @@ export class Age {
     let life = this.earExp - this.earAge;
     console.log(life);
     let jupLife = life * 11.86;
-    console.log(jupLife);
+    console.log(Math.floor(jupLife));
     if (jupLife < 0) {
-      return "You're " + jupLife *-1 + " years over your expiration date!";
+      return "You're " + Math.floor(jupLife)*-1 + " years over your expiration date!";
     } else {
-      return "You have " + jupLife + " years left before your death.";
+      return "You have " + Math.floor(jupLife) + " years left before your death.";
     }
   }
 
@@ -44,9 +44,9 @@ export class Age {
     let life = this.earExp - this.earAge;
     let marLife = life * 1.88;
     if (marLife < 0) {
-      return "You're " + marLife*-1 + " years over your expiration date!";
+      return "You're " + Math.floor(marLife)*-1 + " years over your expiration date!";
     } else {
-      return "You have " + marLife + " years left before your death.";
+      return "You have " + Math.floor(marLife) + " years left before your death.";
     }
   }
 
@@ -54,7 +54,7 @@ export class Age {
     let life = this.earExp - this.earAge;
     let venLife = life * .62;
     if (venLife < 0) {
-      return "You're " + venLife*-1 + " years over your expiration date!";
+      return "You're " + Math.floor(venLife)*-1 + " years over your expiration date!";
     } else {
       return "You have " + venLife + " years left before your death.";
     }
@@ -64,9 +64,9 @@ export class Age {
     let life = this.earExp - this.earAge;
     let merLife = life * .24
     if (merLife < 0) {
-      return "You're " + merLife*-1 + " years over your expiration date!";
+      return "You're " + Math.floor(merLife)*-1 + " years over your expiration date!";
     } else {
-      return "You have " + merLife + " years left before your death.";
+      return "You have " + Math.floor(merLife) + " years left before your death.";
     }
   }
 }
