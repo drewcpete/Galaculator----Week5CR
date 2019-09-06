@@ -4,25 +4,25 @@ export class Age {
     this.earExp = earExp;
   }
 
-  getJup(){
+  getJup() {
     const jup = 11.86;
     let jupAge = Math.floor(this.earAge * jup);
     return jupAge;
   }
 
-  getMer(){
+  getMer() {
     const mer = .24;
     let merAge = Math.floor(this.earAge * mer);
     return merAge;
   }
 
-  getVen(){
+  getVen() {
     const ven = .62;
     let venAge = Math.floor(this.earAge * ven);
     return venAge;
   }
 
-  getMar(){
+  getMar() {
     const mar = 1.88;
     let marAge = Math.floor(this.earAge * mar);
     return marAge;
@@ -32,7 +32,7 @@ export class Age {
     let life = this.earExp - this.earAge;
     console.log(life);
     let jupLife = life * 11.86;
-    console.log(Math.floor(jupLife));
+    console.log(jupLife);
     if (jupLife < 0) {
       return "You're " + Math.floor(jupLife)*-1 + " years over your expiration date!";
     } else {

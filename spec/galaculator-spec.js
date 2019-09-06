@@ -26,11 +26,15 @@ describe('Age', function(){
 
   it('should test to see if the person has lived beyond their life expectancy', function(){
     let testAgeObj = new Age(100, 1);
+    let jupLife = 
     expect(testAgeObj.getJupLife()).toEqual("You're " + Math.floor(jupLife) *-1 + " years over your expiration date!");
   });
 
-  it('should test to see how many more years this person should expect to live', function(){
+  it('should test years this person should expect to live', function(){
     let testAgeObj = new Age(1, 100);
+
     expect(testAgeObj.getJupLife()).toEqual("You have " + Math.floor(jupLife) + " years left before your death.");
   });
+
+
 });
