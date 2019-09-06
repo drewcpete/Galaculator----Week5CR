@@ -54,7 +54,7 @@ export class Age {
     if (venLife < 0) {
       return "You're " + Math.floor(venLife*-1) + " years over your expiration date!";
     } else {
-      return "You have " + venLife + " years left before your death.";
+      return "You have " + Math.floor(venLife) + " years left before your death.";
     }
   }
 

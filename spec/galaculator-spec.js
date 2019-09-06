@@ -36,14 +36,32 @@ describe('Age', function(){
 
   it('should test to see if the person has lived beyond their life expectancy', function(){
     let testAgeObj = new Age(110, 55);
-    expect(testAgeObj.getJupLife()).toEqual("You're " + Math.floor((55 - 110)*-11.86)  + " years over your expiration date!");
+    expect(testAgeObj.getMarLife()).toEqual("You're " + Math.floor((55 - 110)*-1.88)  + " years over your expiration date!");
   });
 
   it('should test for how many more years to expect to live', function(){
     let testAgeObj = new Age(1, 100);
-    expect(testAgeObj.getJupLife()).toEqual("You have " + Math.floor((100-1)*11.86) + " years left before your death.");
+    expect(testAgeObj.getMarLife()).toEqual("You have " + Math.floor((100-1)*1.88) + " years left before your death.");
   });
 
+  it('should test to see if the person has lived beyond their life expectancy', function(){
+    let testAgeObj = new Age(110, 55);
+    expect(testAgeObj.getVenLife()).toEqual("You're " + Math.floor((55 - 110)*-.62)  + " years over your expiration date!");
+  });
 
+  it('should test for how many more years to expect to live', function(){
+    let testAgeObj = new Age(1, 100);
+    expect(testAgeObj.getVenLife()).toEqual("You have " + Math.floor((100-1)*.62) + " years left before your death.");
+  });
+
+  it('should test to see if the person has lived beyond their life expectancy', function(){
+    let testAgeObj = new Age(110, 55);
+    expect(testAgeObj.getMerLife()).toEqual("You're " + Math.floor((55 - 110)*-.24)  + " years over your expiration date!");
+  });
+
+  it('should test for how many more years to expect to live', function(){
+    let testAgeObj = new Age(1, 100);
+    expect(testAgeObj.getMerLife()).toEqual("You have " + Math.floor((100-1)*.24) + " years left before your death.");
+  });
 
 });
