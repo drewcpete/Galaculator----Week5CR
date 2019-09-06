@@ -2,6 +2,7 @@ export class Age {
   constructor(earAge, earExp) {
     this.earAge = earAge;
     this.earExp = earExp;
+    this.earLife = this.earExp - this.earAge;
   }
 
   getJup() {
@@ -29,11 +30,8 @@ export class Age {
   }
 
   getJupLife() {
-    let life = this.earExp - this.earAge;
-    console.log(life);
-    let jupLife = life * 11.86;
-    console.log(jupLife);
-    if (jupLife < 0) {
+    let jupLife = this.earLife * 11.86;
+      if (jupLife < 0) {
       return "You're " + Math.floor(jupLife)*-1 + " years over your expiration date!";
     } else {
       return "You have " + Math.floor(jupLife) + " years left before your death.";
@@ -41,8 +39,8 @@ export class Age {
   }
 
   getMarLife() {
-    let life = this.earExp - this.earAge;
-    let marLife = life * 1.88;
+
+    let marLife = this.earLife * 1.88;
     if (marLife < 0) {
       return "You're " + Math.floor(marLife)*-1 + " years over your expiration date!";
     } else {
@@ -51,8 +49,8 @@ export class Age {
   }
 
   getVenLife() {
-    let life = this.earExp - this.earAge;
-    let venLife = life * .62;
+  
+    let venLife = this.earLife * .62;
     if (venLife < 0) {
       return "You're " + Math.floor(venLife)*-1 + " years over your expiration date!";
     } else {
@@ -61,8 +59,8 @@ export class Age {
   }
 
   getMerLife() {
-    let life = this.earExp - this.earAge;
-    let merLife = life * .24
+
+    let merLife = this.earLife * .24
     if (merLife < 0) {
       return "You're " + Math.floor(merLife)*-1 + " years over your expiration date!";
     } else {
