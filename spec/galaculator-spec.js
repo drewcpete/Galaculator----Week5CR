@@ -21,6 +21,6 @@ describe('Age', function(){
 
 describe('Age', function(){
 
-  it('should test whether the age on Jupitor is 11.86 earth years')
+  it('should test whether the age on Jupiter is 11.86 earth years')
   //test
 })
