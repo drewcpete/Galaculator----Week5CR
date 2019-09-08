@@ -13,16 +13,18 @@ This is a application that takes in user input for age and how long they expect 
 
 |  Behavior  |  Input  |  Output  |
 |------------|---------|----------|
-| Convert Earth Age to Mercury Age | 31  | 7  |
-| Convert Earth Age to Venus Age  | 31  |  19 |
-| Convert Earth Age to Mars Age |  31 |  58 |
-| Convert Earth Age to Jupiter Age  |  31 | 367  |
-| Convert Life Expectancy on Mercury | 100  | 24  |
-| Convert Life Expectancy on Venus | 100 |  62  |
-| Convert Life Expectancy on mars | 100  |  188 |
-| Convert Life Expectancy on Jupiter | 100  |  1186  |
-| Subtract planet age from planet life expectancy  |  Mercury age 7 mercury life expectancy 24  |  17  |
-
+| Convert Earth Age to Mercury Age | 31  | 129  |
+| Convert Earth Age to Venus Age  | 31  |  50 |
+| Convert Earth Age to Mars Age |  31 |  16 |
+| Convert Earth Age to Jupiter Age  |  31 | 2  |
+| Convert Life Expectancy on Mercury | 100  | 416  |
+| Convert Life Expectancy on Venus | 100 |  161  |
+| Convert Life Expectancy on Mars | 100  |  53 |
+| Convert Life Expectancy on Jupiter | 100  |  8  |
+| Subtract Mercury age from planet life expectancy  |  Mercury age 129 Mercury life expectancy 416  |  287  |
+| Subtract Venus age from planet life expectancy  |  Venus age 50 Venus life expectancy 161  |  111  |
+| Subtract Mars age from planet life expectancy  |  Mars age 16 Mars life expectancy 53  |  37  |
+| Subtract Jupiter age from planet life expectancy  |  Jupiter age 2 Jupiter life expectancy 8  |  6  |
 
 ## Setup/Installation
 * Clone repository from https://github.com/drewcpete/Galaculator----Week5CR.git
